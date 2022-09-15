@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface ButtonStyleProps {
   backgroundColor?: string;
+  hoverBackgroundColor?: string;
 }
 
 export const ButtonContainer = styled.button<ButtonStyleProps>`
@@ -23,6 +24,9 @@ export const ButtonContainer = styled.button<ButtonStyleProps>`
   min-height: 22px;
 
   :hover {
-    opacity: 0.8;
+    background: ${(props: ButtonStyleProps) => props.hoverBackgroundColor};
+
+    opacity: ${(props: ButtonStyleProps) =>
+      props.hoverBackgroundColor ? 1 : 0.7};
   }
 `;
