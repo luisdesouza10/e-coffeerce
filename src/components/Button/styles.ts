@@ -21,4 +21,8 @@ export const ButtonContainer = styled.button<ButtonStyleProps>`
 
   min-width: 22px;
   min-height: 22px;
+
+  :hover {
+    opacity: 0.8;
+  }
 `;
