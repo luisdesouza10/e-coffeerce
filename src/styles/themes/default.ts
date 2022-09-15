@@ -17,5 +17,5 @@ export const defaultTheme = {
   "base-button": "#EBE5F9",
   "base-input": "#4B2995",
   "base-card": "#8047F8",
-  background: "#EBE5F9",
+  background: "#FAFAFA",
 };
