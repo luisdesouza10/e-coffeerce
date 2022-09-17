@@ -1,3 +1,3 @@
 export function Home() {
-  return <></>;
+  return <div style={{ background: "red", width: 10, height: 10 }}></div>;
 }
