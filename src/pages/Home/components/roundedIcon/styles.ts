@@ -1,9 +1,17 @@
-import { defaultTheme } from "./../../../../styles/themes/default";
-import styled from "styled-components";
+import { defaultTheme } from './../../../../styles/themes/default';
+import styled from 'styled-components';
 
 export interface RoundedIconStyleProps {
   backgroundColor: string;
 }
+
+export const IconLabelContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 0.75rem;
+`;
 
 export const RoundedIconContainer = styled.div<RoundedIconStyleProps>`
   width: 2rem;
@@ -14,5 +22,9 @@ export const RoundedIconContainer = styled.div<RoundedIconStyleProps>`
   justify-content: center;
   align-items: center;
 
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${props => props.backgroundColor};
+`;
+
+export const Label = styled.text`
+  color: ${defaultTheme['base-text']};
 `;

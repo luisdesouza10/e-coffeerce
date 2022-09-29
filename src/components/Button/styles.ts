@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface ButtonStyleProps {
   backgroundColor?: string;
@@ -7,7 +7,7 @@ interface ButtonStyleProps {
 
 export const ButtonContainer = styled.button<ButtonStyleProps>`
   background: ${(props: ButtonStyleProps) =>
-    props.backgroundColor || "transparent"};
+    props.backgroundColor || 'transparent'};
   border: 0;
 
   display: flex;

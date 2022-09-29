@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -18,10 +18,10 @@ export const HeaderContainer = styled.header`
   }
 
   h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    color: ${(props) => props.theme.purple};
+    color: ${props => props.theme.purple};
   }
 
   @media (max-width: 768px) {

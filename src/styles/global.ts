@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -9,11 +9,11 @@ export const GlobalStyle = createGlobalStyle`
 
     :focus{
       outline: 0;
-      box-shadow: 0 0 0 2px ${(props) => props.theme.purple};
+      box-shadow: 0 0 0 2px ${props => props.theme.purple};
     }
 
     body {
-      background: ${(props) => props.theme.background};
+      background: ${props => props.theme.background};
       -webkit-font-smoothing: antialiased;
     }
 
