@@ -27,4 +27,6 @@ export const RoundedIconContainer = styled.div<RoundedIconStyleProps>`
 
 export const Label = styled.text`
   color: ${defaultTheme['base-text']};
+  font-size: 1rem;
+  line-height: 130%;
 `;
