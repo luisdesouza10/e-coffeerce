@@ -11,7 +11,7 @@ export const defaultTheme = {
 
   "base-title": "#4B2995",
   "base-subtitle": "#8047F8",
-  "base-text": "#EBE5F9",
+  "base-text": "#574F4D",
   "base-label": "#4B2995",
   "base-hover": "#8047F8",
   "base-button": "#EBE5F9",
