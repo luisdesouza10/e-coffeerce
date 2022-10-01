@@ -14,8 +14,8 @@ export const IconLabelContainer = styled.div`
 `;
 
 export const RoundedIconContainer = styled.div<RoundedIconStyleProps>`
-  width: 2rem;
-  height: 2rem;
+  min-width: 2rem;
+  min-height: 2rem;
   border-radius: 2rem;
 
   display: flex;

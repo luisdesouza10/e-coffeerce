@@ -58,13 +58,15 @@ export const CardFooter = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 2rem;
+
+  gap: 0.5rem;
 
   p {
     line-height: 130%;
     font-size: 0.875rem;
     color: ${defaultTheme['base-text']};
 
-    margin-top: 2rem;
     span {
       line-height: 130%;
       font-size: 1.5rem;

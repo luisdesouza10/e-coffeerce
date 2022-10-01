@@ -2,6 +2,7 @@ import { ShoppingCart } from 'phosphor-react';
 import { CHOCOLATE_QUENTE } from '../../../../assets/images';
 import { Button } from '../../../../components';
 import { defaultTheme } from '../../../../styles/themes/default';
+import { Counter } from '../counter';
 import {
   CardContainer,
   CardFooter,
@@ -23,6 +24,9 @@ export function CatalogCard() {
         <p>
           R$ <span>9,99</span>
         </p>
+
+        <Counter />
+
         <Button backgroundColor={defaultTheme['purple-dark']}>
           <ShoppingCart size={18} weight='fill' color={defaultTheme.white} />
         </Button>
