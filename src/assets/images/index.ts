@@ -13,8 +13,11 @@ import HAVAIANO from './havaiano.svg';
 import IRLANDES from './irlandes.svg';
 import LATTE from './latte.svg';
 import MOCHACCINO from './mochaccino.svg';
+import MACCHIATO from './macchiato.svg';
+import ARABE from './arabe.svg';
 
 export {
+  ARABE,
   LOGO,
   INTRODUCTION_IMAGE,
   AMERICANO,
@@ -29,4 +32,5 @@ export {
   IRLANDES,
   LATTE,
   MOCHACCINO,
+  MACCHIATO,
 };
