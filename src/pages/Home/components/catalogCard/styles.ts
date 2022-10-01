@@ -21,6 +21,16 @@ export const CardContainer = styled.div`
 
     margin-top: -1.5rem;
   }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 0.25rem;
+  }
 `;
 
 export const TagText = styled.p`

@@ -1,5 +1,6 @@
 import { Minus, Plus } from 'phosphor-react';
 import { useState } from 'react';
+import { defaultTheme } from '../../../../styles/themes/default';
 import { CounterContainer } from './styles';
 
 export function Counter() {
@@ -18,11 +19,11 @@ export function Counter() {
   return (
     <CounterContainer>
       <button onClick={handleDecrement}>
-        <Minus size={16} color='#c3a7a7' weight='fill' style={{ margin: 0 }} />
+        <Minus size={16} color={defaultTheme['purple-dark']} weight='fill' />
       </button>
       <p>{quantity}</p>
       <button onClick={handleIncrement}>
-        <Plus size={16} color='#c3a7a7' weight='fill' />
+        <Plus size={16} color={defaultTheme['purple-dark']} weight='fill' />
       </button>
     </CounterContainer>
   );

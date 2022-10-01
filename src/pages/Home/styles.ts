@@ -36,3 +36,22 @@ export const IntroductionImage = styled.img`
 
   margin-left: auto;
 `;
+
+export const ProductsContainer = styled.section`
+  margin: 3.375rem 0;
+
+  h3 {
+    font-size: 2rem;
+    line-height: 130%;
+    font-family: 'Baloo 2', cursive;
+    color: ${defaultTheme['base-subtitle']};
+  }
+`;
+
+export const ProductsListContainer = styled.div`
+  padding: 3.375rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+`;
