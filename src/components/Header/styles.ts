@@ -32,3 +32,29 @@ export const HeaderContainer = styled.header`
     padding: 0.5rem 2.5rem;
   }
 `;
+
+export const RelativeContainerCart = styled.div`
+  position: relative;
+
+  .cart-quantity {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: ${props => props.theme['yellow-dark']};
+
+    border-radius: 20px;
+
+    top: -1rem;
+    right: -1rem;
+
+    p {
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: ${props => props.theme.white};
+    }
+  }
+`;

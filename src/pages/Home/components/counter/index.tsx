@@ -3,19 +3,17 @@ import { useState } from 'react';
 import { defaultTheme } from '../../../../styles/themes/default';
 import { CounterContainer } from './styles';
 
-export function Counter() {
-  const [quantity, setQuantity] = useState(1);
+interface CounterProps {
+  quantity: number;
+  handleIncrement: () => void;
+  handleDecrement: () => void;
+}
 
-  function handleIncrement() {
-    setQuantity(quantity + 1);
-  }
-
-  function handleDecrement() {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  }
-
+export function Counter({
+  quantity,
+  handleIncrement,
+  handleDecrement,
+}: CounterProps) {
   return (
     <CounterContainer>
       <button onClick={handleDecrement}>

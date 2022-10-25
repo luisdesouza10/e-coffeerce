@@ -1,5 +1,7 @@
 import { ShoppingCart } from 'phosphor-react';
+import { useContext, useState } from 'react';
 import { Button } from '../../../../components';
+import { ShopContext } from '../../../../contexts';
 import { defaultTheme } from '../../../../styles/themes/default';
 import { formatPrice } from '../../../../utils';
 import { Counter } from '../counter';
@@ -26,6 +28,36 @@ export function CatalogCard({
   price,
   image,
 }: CatalogCardProps) {
+  const { addToCart } = useContext(ShopContext);
+
+  const [quantity, setQuantity] = useState(1);
+
+  function handleIncrement() {
+    setQuantity(quantity + 1);
+  }
+
+  function handleDecrement() {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  }
+
+  function resetQuantity() {
+    setQuantity(1);
+  }
+
+  function handleAddToCart() {
+    addToCart({
+      name,
+      description,
+      tags,
+      price,
+      image,
+      quantity,
+    });
+    resetQuantity();
+  }
+
   return (
     <CardContainer>
       <img src={image} />
@@ -41,9 +73,16 @@ export function CatalogCard({
           R$ <span>{formatPrice(price)}</span>
         </p>
 
-        <Counter />
+        <Counter
+          quantity={quantity}
+          handleIncrement={handleIncrement}
+          handleDecrement={handleDecrement}
+        />
 
-        <Button backgroundColor={defaultTheme['purple-dark']}>
+        <Button
+          backgroundColor={defaultTheme['purple-dark']}
+          onClick={handleAddToCart}
+        >
           <ShoppingCart size={18} weight='fill' color={defaultTheme.white} />
         </Button>
       </CardFooter>
